@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from models import Business
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='Assignment4/templates')
 
 businesses = []
 recent_stack = []   # Stack for recently added businesses
